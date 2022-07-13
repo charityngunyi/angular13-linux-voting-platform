@@ -1,0 +1,41 @@
+
+<div class="row">
+    <div class="col-sm-3">
+      <span></span>
+  </div>
+  <div class="card mb-6 card-md-offset-3 " style="max-width: 540px;">
+    <div class="row g-0">
+      <div class="col-md-4">
+        <div class="value">
+            <h1>{{ article.votes }}</h1>
+            </div>
+            <div class="label">
+                <span class="badge bg-primary rounded-pill">
+            Points</span>
+            </div>
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+          <h5 class="card-title"><a class="col" href="{{ article.link }}">
+            {{ article.title }}
+          </a></h5>
+          <p class="card-text"><small class="text-muted"><div class="meta">({{ article.domain() }})</div></small></p>
+          <div class="list-group">
+            <div class="item">
+              <a href (click)="voteUp()" class="list-group-item list-group-item-action list-group-item-primary">
+          <i class="arrow up icon"></i>
+          upvote
+          </a>
+        </div>
+          <div class="item">
+          <a href (click)="voteDown()" class="list-group-item list-group-item-action list-group-item-danger">
+          <i class="arrow down icon"></i>
+          downvote
+          </a>
+        </div>
+        </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>

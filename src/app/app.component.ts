@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Article } from './article/article.model'; 
+import { Article } from './article/article.model';
 
 @Component({
   selector: 'app-root',
@@ -13,9 +13,9 @@ export class AppComponent {
     }
   constructor() {
     this.articles = [
-      new Article('Angular', 'http://angular.io', 3),
-      new Article('Fullstack', 'http://fullstack.io', 2),
-      new Article('Angular Homepage', 'http://angular.io', 1),
+      new Article('Ubuntu', 'https://ubuntu.com', 3),
+      new Article('Debian', 'https://www.debian.org', 2),
+      new Article('Fedora', 'https://getfedora.org', 1),
     ];
   }
 
@@ -25,6 +25,6 @@ export class AppComponent {
     title.value = '';
     link.value = '';
     return false;
-  
+
   }
 }
